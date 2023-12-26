@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+          font-family: calibri, sans-serif;
+      }
+      kbd {
+          font-size: 12px;
+      }
+      pre code {
+          font-size: 12px;
+          background-color: #eee;
+          border: 1px solid #999;
+          display: block;
+          padding: 5px;
+      }
+      iframe {
+          background: #eee;
+          border: 1px solid;
+      }
+      table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+          padding-top: 3px;
+          padding-bottom: 3px;
+          padding-left: 6px;
+          padding-right: 6px;
+      }
+    </style>
+  </head>
+  <title>README</title>
+  <body>
+
+    <h1>Lab3: Tip Calculator</h1>
+
+    <p>
+      <img src="Lab3_Files/App_Window.jpg" width=450>
+    </p>
+
+    <h2>Objectives</h2>
+
+    <ul>
+      <li>Learn how to use and implement Singleton Design Pattern.</li>
+      <li>Learn how to use and implement Strategy Design Pattern.</li>
+    </ul>
+
+    <h2>Work</h2>
+
+    <ol>
+      <li>Tip Calculator calculates the tip based on the selection of
+	tip percent and tip rounding for the amount of bill.</li>
+      <li>The program uses the singleton design pattern and the strategy
+	design pattern.</li>
+      <li>Lab3.java is the main Java file which defines all the window
+	components. You don't need to make any changes to the file.</li>
+      <li>TipSetting.java is a signleton class file. </li>
+      <li>Complete the TipSettings class in the class file.
+	Its class diagram is shown below.</li>
+
+      <p>
+	<img src="Lab3_Files/TipSettings_Class_Diagram.jpg" width=200>
+      </p>
+
+      <li>TipStrategy is defined as an interface in TipStrategy.java.
+	It is implmented in four different tip strategy classes:</li>
+      <ul>
+	<li>TipStrategyDefault,</li>
+	<li>TipStrategyRoundDown,</li>
+	<li>TipStrategyRoundUp, and</li>
+	<li>TipStrategyTotalRoundUp.</li>
+      </ul>
+      <li>The first three tip strategies are defined in their class files.
+
+	<p>
+	  <img src="Lab3_Files/Class_Diagram.jpg">
+	</p>
+
+      <li>The tip calculation of TipStrategyTotalRoundUp is as follows:</li>
+	<ul>
+	  <li>tip = bill * tipPercent / 100</li>
+	  <li>total = Ceiling(tip + bill)  // use Math.ceil</li>
+	  <li>finalTip = total - bill</li>
+	</ul>
+      <li>Complete the TipStrategyTotalRoundUp class in
+	TipStrategyTotalRoundUp.java.</li>
+<p>
+  === End of Lab3 ===
+</p>
+
+
+  </body>
+</html>
